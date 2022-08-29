@@ -5,9 +5,8 @@ import InputField from './inputField/InputField'
 import Seo from './seo/Seo'
 import Header from './header/Header'
 import Title from './title/Title'
-import Socials from './socials/Socials'
 import PreLoader from './PreLoader/PreLoader'
 import Card from './card/Card'
 import Footer from './footer/Footer'
 
-export { Nprogress, Logo, Button, InputField, Seo, Header, Title, Socials, PreLoader, Card, Footer }
+export { Nprogress, Logo, Button, InputField, Seo, Header, Title, PreLoader, Card, Footer }

@@ -1,0 +1,36 @@
+@import '@/styles/imports';
+
+.section {
+  position: relative;
+  padding: 5rem 0rem 8.2rem;
+  margin-bottom: 10rem;
+  .image {
+    position: relative;
+    width: 100%;
+    height: 69rem;
+    z-index: 1;
+  }
+  .light {
+    position: absolute;
+    left: -11rem;
+    top: 40%;
+    width: 17.5rem;
+    height: 17.5rem;
+    background-color: #e9a003;
+    filter: blur(18.9rem);
+    @include screenMax('tablet') {
+      display: none;
+    }
+  }
+  @include screenMax('mobile') {
+    padding: 5rem 0;
+    .image {
+      height: 35rem;
+    }
+  }
+  @include screenMax('ssm-mobile') {
+    .image {
+      height: 25rem;
+    }
+  }
+}

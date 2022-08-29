@@ -1,0 +1,109 @@
+// colors
+
+// $primary-color: #ffffff;
+// $secondary-color: #00755f;
+// $secondary-background-color: #f8fcfa;
+// $primary-text-color: #3b3d50;
+// $secondary-text-color: $secondary-color;
+// $title-text-color: #012b3f;
+
+// colors
+
+$col-primary: #151515;
+$col-secondary: #1a1b20;
+$col-white-dull: #cacaca;
+$col-text-secondary: #b1b5c3;
+
+$col-white: #ffffff;
+
+$col-black: #000000;
+$col-black-900: #141316;
+$col-black-800: #1b1c1e;
+$col-black-700: #1e1e29;
+$col-black-650: #1b1b1b;
+$col-black-600: #18181c;
+$col-black-550: #191b1f;
+$col-black-500: #141316;
+$col-black-400: #0f1219;
+$col-black-350: #18181c;
+$col-black-300: #161a25;
+$col-black-200: #222531;
+$col-black-100: #323546;
+
+$col-gold-gradient: linear-gradient(0deg, #d1fdff 0%, #fddb92 100%);
+
+$col-blue-10: #eaf4ff;
+$col-blue-20: #beddfd;
+$col-blue-30: #69aef4;
+$col-blue-40: #2e90fa;
+$col-blue-50: #2982e1;
+$col-blue-60: #2573c8;
+$col-blue-70: #236cbc;
+$col-blue-80: #1c5696;
+$col-blue-90: #154170;
+$col-blue-100: #103258;
+
+$col-grey-10: #ffffff;
+$col-grey-20: #ebebea;
+$col-grey-30: #c1c0be;
+$col-grey-40: #37352d;
+$col-grey-50: #2c2a24;
+$col-grey-60: #21201b;
+$col-grey-70: #171713;
+$col-grey-80: #12120f;
+$col-grey-90: #0c0c09;
+$col-grey-100: #030300;
+
+$col-primary-10: #fffbf4;
+$col-primary-20: #fef4de;
+$col-primary-30: #fee9be;
+$col-primary-40: #dfbd75;
+$col-primary-50: #c09f58;
+$col-primary-60: #a2823c;
+$col-primary-70: #83641f;
+$col-primary-80: #654602;
+$col-primary-90: #4e3602;
+$col-primary-100: #3e2b02;
+
+$col-error-10: #feeceb;
+$col-error-20: #fde3e1;
+$col-error-30: #fac5c1;
+$col-error-40: #f04438;
+$col-error-50: #d83d32;
+$col-error-60: #c0362d;
+$col-error-70: #b4332a;
+$col-error-80: #902922;
+$col-error-90: #6c1f19;
+$col-error-100: #541814;
+
+$col-warning-10: #fff4eb;
+$col-warning-20: #ffefe1;
+$col-warning-30: #ffddc1;
+$col-warning-40: #ff9238;
+$col-warning-50: #e68332;
+$col-warning-60: #cc752d;
+$col-warning-70: #bf6e2a;
+$col-warning-80: #995822;
+$col-warning-90: #734219;
+$col-warning-100: #593314;
+
+$col-success-10: #f0f5ea;
+$col-success-20: #e8f1df;
+$col-success-30: #d0e1bd;
+$col-success-40: #669f2a;
+$col-success-50: #5c8f26;
+$col-success-60: #527f22;
+$col-success-70: #4d7720;
+$col-success-80: #3d5f19;
+$col-success-90: #2e4813;
+$col-success-100: #24380f;
+
+// fonts
+$font: 'Graphik-Regular';
+$font-bold: 'Graphik-Bold';
+$font-medium: 'Graphik-Medium';
+
+$z-indexes: ('level-four', 'level-three', 'level-two', 'level-one');
+
+//transition
+$all-transition: all 0.3s ease-out;

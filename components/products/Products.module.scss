@@ -1,0 +1,112 @@
+@import '@/styles/imports';
+
+.section {
+  position: relative;
+  padding: 30rem 10rem 8.2rem;
+  overflow-x: hidden;
+  .text,
+  .title {
+    max-width: 56.2rem;
+
+    h1 {
+      @extend %title-40;
+      font-family: $font-bold;
+      text-align: center;
+      color: $col-white;
+    }
+    h3 {
+      @extend %title-24;
+      font-family: $font-bold;
+      margin-bottom: 1.6rem;
+      // text-align: center;
+      color: $col-white;
+    }
+    p,
+    span {
+      @extend %text-18;
+      text-align: left;
+      color: $col-grey-30;
+    }
+    span {
+      color: $col-white;
+      text-decoration: underline;
+      font-family: $font-medium;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .text {
+    max-width: 50.3rem;
+  }
+  .title {
+    margin: 0 auto 8rem;
+  }
+  @include screenMax('tablet') {
+    padding: 8.2rem 0;
+    .text {
+      max-width: 42.7rem;
+    }
+    .title {
+      max-width: 37.4rem;
+    }
+  }
+  @include screenMax('mobile') {
+    padding: 5rem 0;
+    flex-wrap: wrap;
+    .text,
+    .title {
+      max-width: 100%;
+      h1 {
+        margin-bottom: 1.5rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.row {
+  @include flex(space-between);
+  .container {
+    .image {
+      position: relative;
+      height: 28.7rem;
+      width: 60rem;
+      margin-bottom: 2.4rem;
+      @include screenMax('tablet') {
+        width: 45rem;
+      }
+      @include screenMax('mobile') {
+        width: 100%;
+        margin-top: 2.4rem;
+      }
+    }
+  }
+}
+
+.light1 {
+  position: absolute;
+  right: 5.7rem;
+  top: 1.3rem;
+  width: 24rem;
+  height: 24rem;
+  background-color: #37f5fe;
+  filter: blur(36.9rem);
+  @include screenMax('tablet') {
+    display: none;
+  }
+}
+.light2 {
+  position: absolute;
+  left: -11rem;
+  top: 40%;
+  width: 17.5rem;
+  height: 17.5rem;
+  background-color: #e9a003;
+  filter: blur(18.9rem);
+  @include screenMax('tablet') {
+    display: none;
+  }
+}

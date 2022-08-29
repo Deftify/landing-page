@@ -1,0 +1,18 @@
+@import '@/styles/imports';
+
+.logo {
+  width: fit-content;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 11rem;
+  height: 3.6rem;
+  // &[data-expanded='true'] {
+  // 	width: 11.7rem;
+  // 	height: 4rem;
+  // }
+  @include screenMax('ssm-mobile') {
+    width: 10rem;
+    height: 5rem;
+  }
+}

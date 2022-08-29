@@ -1,0 +1,50 @@
+@import '@/styles/imports';
+
+.card {
+  width: 43rem;
+  height: 19rem;
+  margin: 1.2rem;
+  background-color: #171713;
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+  z-index: 1;
+  flex-shrink: 0;
+  .row {
+    @include flex();
+    .icon {
+      position: relative;
+      width: 1.6rem;
+      height: 1.4rem;
+      margin-right: 1.6rem;
+    }
+  }
+  .container {
+    // @include flex();
+    .text,
+    .title {
+      max-width: 35rem;
+      h3,
+      h4 {
+        @extend %text-16;
+      }
+      h3 {
+        font-family: $font-medium;
+        font-weight: 700;
+      }
+      p {
+        @extend %text-12;
+      }
+    }
+    .image {
+      position: relative;
+      width: 4rem;
+      height: 4rem;
+      margin-right: 1.6rem;
+    }
+  }
+}
+
+.small_row {
+  @include flex();
+  margin-top: 2.4rem;
+}

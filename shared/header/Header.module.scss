@@ -1,0 +1,169 @@
+@import '@/styles/imports';
+
+.header {
+  @include flex(space-between, center, nowrap);
+  padding: 2.4rem 7.6rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: $all-transition;
+  z-index: 3;
+  a {
+    .header_logoContainer {
+      // width: 21.6rem;
+      transition: $all-transition;
+    }
+  }
+  .header_nav {
+    min-width: 35%;
+    .header_navList {
+      @include flex(space-between, center, nowrap);
+      padding: 0;
+      margin: 0;
+      .header_navLink {
+        padding: 1rem 2.5rem;
+        a {
+          font-family: $font-medium;
+          @extend %text-16;
+          transition: $all-transition;
+          color: $col-white;
+          &:hover {
+            color: $col-white;
+          }
+        }
+        @include screenMax('tablet') {
+          @include flex(flex-end, center, nowrap);
+        }
+        &[data-active='true'] {
+          a {
+            color: $col-white;
+          }
+        }
+      }
+    }
+  }
+  @include screenMax('tablet') {
+    padding: 3rem 2.4rem;
+    .header_nav {
+      .header_navList {
+        display: block;
+        padding: 0;
+        margin: 0;
+        .header_navLink {
+          padding: 2rem;
+          a {
+            font-family: $font-bold;
+            font-size: 2rem;
+            font-weight: 600;
+            transition: $all-transition;
+            color: rgba(93, 94, 103, 1);
+          }
+        }
+      }
+    }
+  }
+}
+.header_wrapper,
+.header_wrapper__collapsed {
+  margin-left: 15rem;
+  // flex-grow: 1;
+  transition: transform 0.3s ease-out;
+  @include flex(space-between, center);
+
+  @include screenMax('tablet') {
+    order: 3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 6.5rem;
+    left: 0;
+    background-color: rgba($col-grey-100, 0.9);
+    z-index: 10;
+    padding: 4rem 7%;
+    margin-left: 0;
+    transform: translateX(0);
+    @include flex(flex-start, flex-end, column);
+  }
+}
+
+.header_wrapper__collapsed {
+  @include screenMax('tablet') {
+    transform: translateX(101vw);
+  }
+}
+
+.header_scrolled {
+  // padding: 1.4rem 4.4rem 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  background-color: rgba($col-grey-100, 0.9);
+  transition: $all-transition;
+  // @include screenMax('tablet') {
+  //   padding: 2.4rem 1.4rem;
+  // }
+}
+
+.header_hamburger,
+.header_hamburger__open {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  height: fit-content;
+  background: transparent;
+  border: none;
+  width: 45px;
+
+  @include screenMax('tablet') {
+    order: 2;
+    margin-left: auto;
+    @include flex(center, flex-end, column nowrap);
+  }
+
+  &Bar {
+    width: 35px;
+    height: 2px;
+    background-color: $col-white;
+    margin: 0.4rem 0;
+    width: 35px;
+    opacity: 0.8;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    &:nth-child(2) {
+      width: 30px;
+    }
+  }
+}
+
+.header_hamburger__open {
+  min-height: 10px;
+  position: relative;
+
+  .header_hamburgerBar {
+    width: 20px;
+  }
+
+  .header_hamburgerBar:first-child {
+    margin-bottom: -1px;
+    transform: rotate(45deg);
+  }
+
+  .header_hamburgerBar:last-child {
+    margin-top: -1px;
+    transform: rotate(-45deg);
+  }
+}
+
+.button_container {
+  @include flex(flex-start, center);
+  .button {
+    &:first-child {
+      color: #afbed0;
+      margin-right: 1.6rem;
+      @include screenMax('tablet') {
+        border-color: #784ffe;
+        background-color: $col-primary;
+      }
+    }
+    padding: 1.4rem 5.45rem;
+  }
+}

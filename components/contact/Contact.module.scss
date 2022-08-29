@@ -1,0 +1,74 @@
+@import '@/styles/imports';
+
+.section {
+  position: relative;
+  padding: 25rem 0 8.2rem;
+  overflow-x: hidden;
+  .title {
+    max-width: 40.2rem;
+    margin: 0 auto 2.4rem;
+    h1 {
+      @extend %title-40;
+      font-family: $font-bold;
+      text-align: center;
+      color: $col-white;
+    }
+    h3 {
+      @extend %title-24;
+      font-family: $font-bold;
+      margin-bottom: 1.6rem;
+      // text-align: center;
+      color: $col-white;
+    }
+    p,
+    span {
+      @extend %text-18;
+      text-align: left;
+      color: $col-grey-30;
+    }
+    span {
+      color: $col-white;
+      text-decoration: underline;
+      font-family: $font-medium;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  @include screenMax('tablet') {
+    padding: 8.2rem 0;
+    .title {
+      max-width: 37.4rem;
+    }
+  }
+  @include screenMax('mobile') {
+    padding: 5rem 0;
+    flex-wrap: wrap;
+    .text,
+    .title {
+      max-width: 100%;
+      h1 {
+        margin-bottom: 1.5rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 56rem;
+  margin: 0 auto;
+  @include screenMax('mobile') {
+    max-width: 100%;
+  }
+}
+
+.input {
+  margin-top: 4.8rem;
+}
+
+.button {
+  width: 100%;
+  margin-top: 4rem;
+}

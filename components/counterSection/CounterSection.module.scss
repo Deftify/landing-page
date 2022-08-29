@@ -1,0 +1,57 @@
+@import '@/styles/imports';
+
+.section {
+  position: relative;
+  padding: 8.2rem 10rem;
+  @include flex(space-between);
+  .text,
+  .title {
+    // max-width: 47.4rem;
+
+    h1 {
+      @extend %title-56;
+      margin-bottom: 1.2rem;
+      font-family: $font-bold;
+      text-align: left;
+      color: $col-white;
+    }
+    p {
+      @extend %text-18;
+      text-align: left;
+      color: $col-grey-30;
+    }
+  }
+  @include screenMax('tablet') {
+    padding: 8.2rem 0;
+  }
+  @include screenMax('mobile') {
+    padding: 5rem 0;
+    justify-content: flex-start;
+    .text,
+    .title {
+      max-width: 100%;
+      &:not(:nth-child(even)) {
+        margin-left: 14rem;
+      }
+      h1 {
+        margin-bottom: 1.5rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.light {
+  position: absolute;
+  left: -11rem;
+  top: 40%;
+  width: 17.5rem;
+  height: 17.5rem;
+  background-color: #37f5fe;
+  filter: blur(18.9rem);
+  @include screenMax('tablet') {
+    display: none;
+  }
+}

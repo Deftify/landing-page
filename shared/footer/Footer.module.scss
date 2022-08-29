@@ -1,0 +1,42 @@
+@import '@/styles/imports';
+
+.section {
+  position: relative;
+  padding: 8.2rem 10rem 15rem;
+  overflow-x: hidden;
+  @include flex(center, center, column);
+
+  .logo {
+    position: relative;
+    width: 4.7rem;
+    height: 3.6rem;
+    margin-bottom: 4rem;
+  }
+  .navList,
+  .nav_list {
+    @include flex();
+    .navLink {
+      padding: 1.2rem 2.4rem;
+      a {
+        @extend %text-16;
+        font-family: $font-medium;
+        font-weight: 600;
+        color: $col-white;
+      }
+    }
+  }
+  .nav_list {
+    margin-top: 3rem;
+    .navLink {
+      padding: 1.2rem;
+      a {
+        color: rgba($col-white, 0.69);
+      }
+    }
+  }
+  @include screenMax('mobile') {
+    .navList {
+      justify-content: center;
+    }
+  }
+}

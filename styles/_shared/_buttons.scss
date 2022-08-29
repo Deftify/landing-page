@@ -1,0 +1,40 @@
+%btn {
+  min-width: 5rem;
+  min-height: 3rem;
+  transition: all 0.2s ease-out;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.6rem;
+  padding: 1.8rem 1.5rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  font-family: $font-bold;
+  background-color: transparent;
+  border-color: transparent;
+  &:hover {
+    opacity: 0.9;
+    transition: $all-transition;
+  }
+  // @include flex(center, center);
+  // column-gap: 6px;
+
+  // @include flex(center, center, row nowrap);
+}
+
+%btn-primary {
+  @extend %btn;
+  background-color: $col-primary-40;
+  // border-color: $col-gold;
+  color: $col-primary;
+}
+
+%btn-transparent {
+  @extend %btn;
+  background-color: transparent;
+  border-color: transparent;
+
+  color: $col-white;
+}

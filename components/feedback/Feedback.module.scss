@@ -74,6 +74,13 @@
 .row {
   @include flex(center, flex-start, nowrap);
   overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 .light {

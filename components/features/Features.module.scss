@@ -1,0 +1,123 @@
+@import '@/styles/imports';
+
+.section {
+  position: relative;
+  padding: 8.2rem 10rem;
+  .containers {
+    @include flex(space-between);
+    .container {
+      .image {
+        position: relative;
+        width: 69rem;
+        height: 48.7rem;
+        @include screenMax('tablet') {
+          width: 55rem;
+        }
+        @include screenMax('mobile') {
+          display: none;
+        }
+      }
+      .accordion {
+        border-bottom: 0.1rem solid #37352d;
+        max-width: 45rem;
+        padding-bottom: 3.6rem;
+        margin-bottom: 3.6rem;
+        .header {
+          cursor: pointer;
+          .text {
+            max-width: 90%;
+          }
+        }
+        .body {
+          width: 100%;
+          padding-left: 1rem;
+          max-height: 0;
+          overflow: hidden;
+          transition: all 0.5s ease-in-out;
+          .accordion_image {
+            position: relative;
+            display: none;
+          }
+          @include screenMax('mobile') {
+            width: 100%;
+          }
+        }
+        &[data-active='true'] {
+          transition: all 0.5s ease-in-out;
+          height: auto;
+          .body {
+            max-height: 100rem;
+            transition: all 0.5s ease-in-out;
+            @include screenMax('mobile') {
+              width: 100%;
+              .accordion_image {
+                display: block;
+                margin-top: 3rem;
+                width: 100%;
+                height: 24.2rem;
+              }
+            }
+          }
+        }
+        transition: all 0.5s ease-in-out;
+        @include screenMax('tablet') {
+          max-width: 35rem;
+        }
+        @include screenMax('mobile') {
+          max-width: 100%;
+        }
+      }
+      &:first-child {
+        margin-top: 3.6rem;
+      }
+    }
+  }
+  .text,
+  .title {
+    // max-width: 47.4rem;
+
+    h1 {
+      font-size: 20rem;
+      line-height: 8rem;
+      margin-bottom: 1.2rem;
+      font-family: $font-bold;
+      //   text-align: left;
+      color: $col-grey-100;
+      text-shadow: -1px -1px 0 $col-white, 1px -1px 0 $col-white, -1px 1px 0 $col-white, 1px 1px 0 $col-white;
+      @include screenMax('tablet') {
+        font-size: 13rem;
+      }
+      @include screenMax('mobile') {
+        font-size: 4.8rem;
+      }
+    }
+    h3 {
+      @extend %title-24;
+      font-weight: 700;
+      font-family: $font-bold;
+      margin-bottom: 1.6rem;
+    }
+    p {
+      @extend %text-16;
+      text-align: left;
+      color: $col-grey-30;
+    }
+  }
+  @include screenMax('tablet') {
+    padding: 8.2rem 0;
+  }
+  @include screenMax('mobile') {
+    padding: 5rem 0;
+    justify-content: flex-start;
+    .text,
+    .title {
+      max-width: 100%;
+      h1 {
+        margin-bottom: 1.5rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

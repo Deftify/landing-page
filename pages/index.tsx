@@ -1,7 +1,18 @@
 import { ReactElement, useEffect } from 'react'
 import { MainLayout } from '@/layout'
 import { useRouter } from 'next/router'
-import { Analytics, Chains, Contact, CounterSection, Feedback, Hero, LaunchPad, Products } from '@/components'
+import {
+  Analytics,
+  Chains,
+  Contact,
+  CounterSection,
+  Features,
+  Feedback,
+  Hero,
+  LaunchPad,
+  Products,
+  TestSection,
+} from '@/components'
 
 const Home = (): ReactElement => {
   const router = useRouter()
@@ -14,6 +25,8 @@ const Home = (): ReactElement => {
       <LaunchPad />
       <Chains />
       <CounterSection />
+      <Features />
+      {/* <TestSection /> */}
       <Analytics />
       <Products />
       <Feedback />

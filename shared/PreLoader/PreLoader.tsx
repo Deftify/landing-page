@@ -5,13 +5,7 @@ import styles from './PreLoader.module.scss'
 const PreLoader = () => {
   return (
     <div className={styles.preloader}>
-      {/* <div className={styles.loader}></div> */}
-      <div className={styles.loader}>
-        {/* <div className={styles.bar}>
-          <div className={styles.circle}></div>
-          <p>Deftify</p>
-        </div> */}
-      </div>
+      <div className={styles.loader}></div>
       <div className={styles.icon_container}>
         <div className={styles.icon}>
           <Image

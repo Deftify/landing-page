@@ -36,7 +36,8 @@ const Analytics = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.image}>
-          <Image src="/svgs/analytics.svg" layout="fill" alt="" />
+          <Image src="/svgs/analytic-chart.svg" layout="fill" alt="" quality={100} />
+          {/* <img src="/svgs/analytic-chart.svg" alt="" /> */}
         </div>
       </div>
     </section>

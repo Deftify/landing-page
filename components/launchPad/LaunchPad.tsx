@@ -9,22 +9,21 @@ const LaunchPad = () => {
   const ref = useRef<HTMLElement | null>(null)
   useEffect(() => {
     const element = ref.current
-    gsap.to(element, {
-      y: -150,
-      duration: 1,
-      scrollTrigger: {
-        trigger: element,
-        start: 'top bottom',
-        end: 'top top',
-        scrub: 1,
+    gsap.fromTo(
+      element,
+      {
+        y: 370,
+        duration: 2.5,
+        delay: 2,
       },
-    })
+      { y: 0, duration: 2, ease: 'elastic.out(1, 1)', stagger: 0.1 },
+    )
   }, [])
   return (
     <section className={styles.section} id="launchpad">
       <div className={styles.light}></div>
       <div className={styles.image}>
-        <Image src="/svgs/launchpad.svg" layout="fill" alt="launchpad" />
+        <Image src="/svgs/analytics-large.svg" layout="fill" alt="launchpad" priority={true} loading="eager" />
       </div>
     </section>
   )

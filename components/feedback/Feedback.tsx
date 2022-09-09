@@ -63,8 +63,8 @@ const Feedback = () => {
         <h1>What our users say</h1>
       </div>
       <Swiper
-        slidesPerView={testimonialNumber}
-        spaceBetween={0}
+        slidesPerView={testimonialNumber2}
+        spaceBetween={30}
         modules={[Autoplay]}
         loop={true}
         autoplay={{

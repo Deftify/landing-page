@@ -11,6 +11,11 @@ const Features = () => {
         <h1>Our features</h1>
       </div>
       <div className={styles.containers}>
+        <div className={styles.indicator_container}>
+          <span className={styles.indicator} data-active={activeNumber === 0} style={{ top: '0' }}></span>
+          <span className={styles.indicator} data-active={activeNumber === 1} style={{ top: '5.5rem' }}></span>
+          <span className={styles.indicator} data-active={activeNumber === 2} style={{ top: '11rem' }}></span>
+        </div>
         <div className={styles.container}>
           {features.map(({ title, text, image }, index) => {
             return (

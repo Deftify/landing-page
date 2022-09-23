@@ -6,7 +6,7 @@ const LaunchPad = () => {
     <section className={styles.section} id="launchpad">
       <div className={styles.light}></div>
       <div className={styles.image}>
-        <Image src="/svgs/hero.svg" layout="fill" alt="launchpad" priority={true} loading="eager" />
+        <Image src="/svgs/feature-1-min.svg" layout="fill" alt="launchpad" priority={true} loading="eager" />
       </div>
     </section>
   )

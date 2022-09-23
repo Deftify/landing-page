@@ -45,34 +45,34 @@ export const icons: Icons[] = [
     icon: '/svgs/icon-aave.svg',
     title: 'aave',
   },
-  {
-    icon: '/svgs/theta.svg',
-    title: 'theta',
-  },
-  {
-    icon: '/svgs/marker.svg',
-    title: 'marker',
-  },
-  {
-    icon: '/svgs/thorchain.svg',
-    title: 'thorchain',
-  },
-  {
-    icon: '/svgs/pancakeswap.svg',
-    title: 'pancakeswap',
-  },
-  {
-    icon: '/svgs/kava.svg',
-    title: 'kava',
-  },
-  {
-    icon: '/svgs/1inch.svg',
-    title: '1inch',
-  },
-  {
-    icon: '/svgs/Sushiswap.svg',
-    title: 'Sushiswap',
-  },
+  // {
+  //   icon: '/svgs/theta.svg',
+  //   title: 'theta',
+  // },
+  // {
+  //   icon: '/svgs/marker.svg',
+  //   title: 'marker',
+  // },
+  // {
+  //   icon: '/svgs/thorchain.svg',
+  //   title: 'thorchain',
+  // },
+  // {
+  //   icon: '/svgs/pancakeswap.svg',
+  //   title: 'pancakeswap',
+  // },
+  // {
+  //   icon: '/svgs/kava.svg',
+  //   title: 'kava',
+  // },
+  // {
+  //   icon: '/svgs/1inch.svg',
+  //   title: '1inch',
+  // },
+  // {
+  //   icon: '/svgs/Sushiswap.svg',
+  //   title: 'Sushiswap',
+  // },
   // {
   //   icon: '/svgs/daomaker.svg',
   //   title: 'daomaker',

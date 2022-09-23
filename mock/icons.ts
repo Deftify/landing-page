@@ -37,10 +37,10 @@ export const icons: Icons[] = [
     icon: '/svgs/icon-dai.svg',
     title: 'dai',
   },
-  {
-    icon: '/svgs/icon-tera.svg',
-    title: 'tera',
-  },
+  // {
+  //   icon: '/svgs/icon-tera.svg',
+  //   title: 'tera',
+  // },
   {
     icon: '/svgs/icon-aave.svg',
     title: 'aave',
@@ -73,8 +73,8 @@ export const icons: Icons[] = [
     icon: '/svgs/Sushiswap.svg',
     title: 'Sushiswap',
   },
-  {
-    icon: '/svgs/daomaker.svg',
-    title: 'daomaker',
-  },
+  // {
+  //   icon: '/svgs/daomaker.svg',
+  //   title: 'daomaker',
+  // },
 ]

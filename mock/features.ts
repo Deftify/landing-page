@@ -7,7 +7,7 @@ interface Features {
 export const features: Features[] = [
   {
     title: 'Crypto Research Tool',
-    text: 'The problem is that most crypto traders always open multiple tabs and compare all of them before they get into a trade. Imagine if you can open a trading chart, correlation module, screener, and different indicators, all can be personalized in one same screen.',
+    text: 'Imagine if you can see a trading chart, correlation module, screener, multiple indicators, exchange inflows and outflows, and other important data - all inside one same screen. Our research tool is designed to help crypto traders make in-depth and fast analysis at the same time. ',
     image: '/svgs/feature-1-min.svg',
   },
   {

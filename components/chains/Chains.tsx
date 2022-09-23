@@ -30,8 +30,7 @@ const Chains = () => {
         <div className={styles.text}>
           <p>
             Whether you are a daytrader or long-term HODL-ers, our tools are designed to help you make more informed and
-            more confidence decision. Use Deftify to do your due dilligence before you trade BTC, ETH, or low-cap
-            tokens.
+            more confidence decision. Use Deftify to do your due dilligence before you trade BTC, ETH, or other cryptocurrencies.
           </p>
         </div>
       </div>

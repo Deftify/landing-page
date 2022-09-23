@@ -8,7 +8,7 @@ const Products = () => {
       <div className={styles.light1}></div>
       <div className={styles.light2}></div>
       <div className={styles.title}>
-        <h1>What we have coming soon in stock for you</h1>
+        <h1>We also have two other products coming soon</h1>
       </div>
       <div className={styles.row}>
         {products.map((product, index) => (

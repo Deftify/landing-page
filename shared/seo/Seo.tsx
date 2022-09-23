@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Seo = ({
-	title = 'Deftify - Deftify',
+	title = 'Deftify - DeFi Analytics and Crypto Research Tools',
 	description = 'Deftify Defi NFT analytics aggregator',
 	icon = 'img/social-icon.png',
 	keywords = 'dex, swap, deftify, Defi, NFT, analytics, aggregator',

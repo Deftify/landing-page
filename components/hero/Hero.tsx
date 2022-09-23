@@ -31,11 +31,11 @@ const Hero = () => {
     <section className={styles.section} id="home" ref={ref}>
       <div className={styles.light}></div>
       <div className={styles.title}>
-        <h1>Crypto Analytics at your fingertips</h1>
+        <h1>Simpler Crypto and DeFi Analytics</h1>
       </div>
       <div className={styles.text}>
         <p>
-          Predict crypto movement with Deftify’s market data aggregator and research tools. Try our app and see for
+          Predict crypto movement with Deftify’s market data aggregator, DeFi analytics, and research tools. Try our app and see for
           yourself
         </p>
       </div>

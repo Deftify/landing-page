@@ -1,7 +1,5 @@
 import { Card } from '@/shared'
-import React, { useEffect, useLayoutEffect, useState, useRef } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay } from 'swiper'
 import 'swiper/css'
@@ -41,21 +39,6 @@ const Feedback = () => {
     testimonialSlider()
     return () => window.removeEventListener('resize', testimonialSlider)
   })
-  gsap.registerPlugin(ScrollTrigger)
-  const ref = useRef<HTMLElement | null>(null)
-  useEffect(() => {
-    const element = ref.current
-    gsap.to(element, {
-      y: -150,
-      duration: 1,
-      scrollTrigger: {
-        trigger: element,
-        start: 'top bottom',
-        end: 'top top',
-        scrub: 1,
-      },
-    })
-  }, [])
   return (
     <section className={styles.section}>
       <div className={styles.light}></div>

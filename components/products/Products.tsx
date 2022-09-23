@@ -1,26 +1,8 @@
 import { products } from '@/mock'
 import Image from 'next/image'
-import React, { useRef, useEffect } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import styles from './Products.module.scss'
 
 const Products = () => {
-  gsap.registerPlugin(ScrollTrigger)
-  const ref = useRef<HTMLElement | null>(null)
-  useEffect(() => {
-    const element = ref.current
-    gsap.to(element, {
-      y: -150,
-      duration: 1,
-      scrollTrigger: {
-        trigger: element,
-        start: 'top bottom',
-        end: 'top top',
-        scrub: 1,
-      },
-    })
-  }, [])
   return (
     <section className={styles.section}>
       <div className={styles.light1}></div>

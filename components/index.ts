@@ -8,6 +8,4 @@ import Hero from './hero/Hero'
 import LaunchPad from './launchPad/LaunchPad'
 import Products from './products/Products'
 
-import TestSection from './testSection/TestSection'
-
-export { Hero, LaunchPad, Chains, CounterSection, Analytics, Products, Feedback, Contact, Features, TestSection }
+export { Hero, LaunchPad, Chains, CounterSection, Analytics, Products, Feedback, Contact, Features }

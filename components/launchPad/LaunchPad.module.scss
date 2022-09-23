@@ -30,11 +30,6 @@
       height: 35rem;
     }
   }
-  @include screenMax('ssm-mobile') {
-    .image {
-      height: 25rem;
-    }
-  }
 }
 
 @keyframes slideUp {

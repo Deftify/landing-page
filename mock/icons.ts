@@ -6,15 +6,15 @@ interface Icons {
 
 export const icons: Icons[] = [
   {
-    icon: '/svgs/tera.svg',
-    title: 'tera',
+    icon: '/svgs/icon-chainlink.svg',
+    title: 'chainlink',
   },
   {
-    icon: '/svgs/icon-eth.svg',
+    icon: '/svgs/icon-ethereum.svg',
     title: 'eth',
   },
   {
-    icon: '/svgs/smart-chain.svg',
+    icon: '/svgs/icon-bnb.svg',
     title: 'bnb',
   },
   {
@@ -38,8 +38,8 @@ export const icons: Icons[] = [
     title: 'dai',
   },
   {
-    icon: '/svgs/dydx.svg',
-    title: 'dydx',
+    icon: '/svgs/icon-tera.svg',
+    title: 'tera',
   },
   {
     icon: '/svgs/icon-aave.svg',
@@ -66,7 +66,7 @@ export const icons: Icons[] = [
     title: 'kava',
   },
   {
-    icon: '/svgs/unicorn.svg',
+    icon: '/svgs/1inch.svg',
     title: '1inch',
   },
   {

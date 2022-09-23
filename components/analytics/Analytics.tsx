@@ -1,25 +1,7 @@
 import Image from 'next/image'
-import React, { useRef, useEffect } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import styles from './Analytics.module.scss'
 
 const Analytics = () => {
-  gsap.registerPlugin(ScrollTrigger)
-  const ref = useRef<HTMLElement | null>(null)
-  useEffect(() => {
-    const element = ref.current
-    gsap.to(element, {
-      y: -150,
-      duration: 1,
-      scrollTrigger: {
-        trigger: element,
-        start: 'top bottom',
-        end: 'top top',
-        scrub: 1,
-      },
-    })
-  }, [])
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -36,8 +18,7 @@ const Analytics = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.image}>
-          <Image src="/svgs/analytic-chart.svg" layout="fill" alt="" quality={100} />
-          {/* <img src="/svgs/analytic-chart.svg" alt="" /> */}
+          <Image src="/svgs/analytics-min.svg" layout="fill" alt="" quality={100} />
         </div>
       </div>
     </section>

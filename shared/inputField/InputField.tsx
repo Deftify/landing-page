@@ -9,7 +9,7 @@ interface Props {
   value?: string | number
   name?: string
   label?: string
-  type?: 'text' | 'number' | 'password'
+  type?: 'text' | 'number' | 'password' | 'email' | 'textarea'
   className?: string
   onChange?: (e: any) => void
   onBlur?: (e: any) => void
@@ -36,23 +36,36 @@ const InputField = ({
         </label>
       )}
 
-      <div className={styles.input_container}>
+      <div className={styles.input_container} data-type={type}>
         <div className={styles.input_wrapper}>
           {!!icon && (
             <figure className={styles.input_icon}>
               <Image src={icon} layout="fill" alt="" />
             </figure>
           )}
-          <input
-            className={styles.input_field}
-            type={type}
-            data-icon={!!icon}
-            placeholder={placeholder}
-            onChange={onChange}
-            onBlur={onBlur}
-            onFocus={onFocus}
-            value={value}
-          />
+          {type === 'textarea' ? (
+            <textarea
+              required
+              className={styles.input_field}
+              data-icon={!!icon}
+              placeholder={placeholder}
+              onChange={onChange}
+              onBlur={onBlur}
+              onFocus={onFocus}
+              value={value}
+            />
+          ) : (
+            <input
+              className={styles.input_field}
+              type={type}
+              data-icon={!!icon}
+              placeholder={placeholder}
+              onChange={onChange}
+              onBlur={onBlur}
+              onFocus={onFocus}
+              value={value}
+            />
+          )}
         </div>
       </div>
     </div>

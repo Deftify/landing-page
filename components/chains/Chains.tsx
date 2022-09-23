@@ -1,27 +1,11 @@
 import { icons } from '@/mock'
 import Image from 'next/image'
-import React, { useRef, useEffect, useState } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import React, { useEffect, useState } from 'react'
 import styles from './Chains.module.scss'
 
 const Chains = () => {
   const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false)
-  gsap.registerPlugin(ScrollTrigger)
-  const ref = useRef<HTMLElement | null>(null)
-  useEffect(() => {
-    const element = ref.current
-    gsap.to(element, {
-      y: -150,
-      duration: 1,
-      scrollTrigger: {
-        trigger: element,
-        start: 'top bottom',
-        end: 'top top',
-        scrub: 1,
-      },
-    })
-  }, [])
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 650) {

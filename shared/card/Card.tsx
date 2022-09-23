@@ -18,7 +18,7 @@ const Card = ({ icon, name, description }: CardProps) => {
         <div className={styles.container}>
           <div className={styles.text}>
             <h4>
-              Deftify has a proven team of crypto professionals - it's currently the peak of bear market, and yet Deftify team keep building.
+              Deftify has a proven team of crypto professionals - it's currently the peak of bear market, and yet Deftify team keep building. Appreciate the effort!
             </h4>
           </div>
           <div className={styles.small_row}>

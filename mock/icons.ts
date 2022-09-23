@@ -33,10 +33,10 @@ export const icons: Icons[] = [
     icon: '/svgs/compound.svg',
     title: 'compound',
   },
-  {
-    icon: '/svgs/icon-dai.svg',
-    title: 'dai',
-  },
+  // {
+  //   icon: '/svgs/icon-dai.svg',
+  //   title: 'dai',
+  // },
   // {
   //   icon: '/svgs/icon-tera.svg',
   //   title: 'tera',

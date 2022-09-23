@@ -18,8 +18,7 @@ const Card = ({ icon, name, description }: CardProps) => {
         <div className={styles.container}>
           <div className={styles.text}>
             <h4>
-              Deftify has a team of decentralized professionals - all experts in their fields and in love with what we
-              are building at Deftify.
+              Deftify has a decentralized team of crypto professionals - it's the peak of bear market and they keep building, unlike other pre-funded crypto projects.
             </h4>
           </div>
           <div className={styles.small_row}>
@@ -27,7 +26,7 @@ const Card = ({ icon, name, description }: CardProps) => {
               <Image src="/svgs/twitter-icon.svg" alt="" layout="fill" />
             </div>
             <div className={styles.title}>
-              <h3>Floyd Miles</h3>
+              <h3>John Doe</h3>
               <p>twitter</p>
             </div>
           </div>

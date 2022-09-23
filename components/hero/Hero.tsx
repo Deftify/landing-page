@@ -31,7 +31,7 @@ const Hero = () => {
     <section className={styles.section} id="home" ref={ref}>
       <div className={styles.light}></div>
       <div className={styles.title}>
-        <h1>Defi &amp; NFT Analytics at your fingertips</h1>
+        <h1>Crypto Analytics at your fingertips</h1>
       </div>
       <div className={styles.text}>
         <p>
@@ -43,9 +43,9 @@ const Hero = () => {
         <Button type="primary" className={styles.button}>
           Explore
         </Button>
-        <Button type="transparent" className={styles.button}>
-          <div>Whitepaper</div>
-        </Button>
+        <a href="https://drive.google.com/file/d/1r6i5xi8nkG4Y15e8YomfW1JpzUFF1rmf/view?usp=sharing" rel="nofollow noopener" target="blank"><Button type="transparent" className={styles.button}>
+          <div>Pitch Deck</div>
+        </Button></a>
       </div>
     </section>
   )

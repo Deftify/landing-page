@@ -17,7 +17,7 @@ export const products: Products[] = [
     image: '/svgs/launchpad-min.svg',
     title: 'Launchpad',
     description:
-      'In the future where regulations will become the default issue for every crypto fundraising, it’s important to have a launchpad that pander to local audiences.',
+      "Deftify will also offer a launchpad service, where we will help new promising cryptocurrency projects to become part of Deftify's broader ecosystem.",
     url: '#',
   },
 ]

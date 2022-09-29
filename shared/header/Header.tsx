@@ -13,7 +13,7 @@ const Header = () => {
   const [collapsed, setCollapsed] = useState<boolean>(true)
   const [dropDown, setDropDown] = useState<boolean>(false)
   const handleNavClick = (id: string) => {
-    scrollTo({ id })
+    // scrollTo({ id })
     setCollapsed(true)
   }
   const checkActive = (url: string) => {

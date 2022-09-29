@@ -6,10 +6,13 @@ import styles from './Features.module.scss'
 const Features = () => {
   const [activeNumber, setActiveNumber] = useState<number>(0)
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      if (activeNumber < 3) setActiveNumber(activeNumber + 1)
-      if (activeNumber === 2) setActiveNumber(0)
-    }, 8000)
+    let timeout: any
+    if (window.innerWidth > 950) {
+      timeout = setTimeout(() => {
+        if (activeNumber < 3) setActiveNumber(activeNumber + 1)
+        if (activeNumber === 2) setActiveNumber(0)
+      }, 8000)
+    }
     return () => clearTimeout(timeout)
   }, [activeNumber])
   return (

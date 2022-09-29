@@ -1,0 +1,29 @@
+@import '@/styles/imports';
+
+.smallLoader {
+  @include flex(center, center, nowrap);
+  width: 100%;
+  height: 100%;
+  &:after {
+    content: ' ';
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 0.4rem solid #000;
+    border-color: #000 transparent #000 transparent;
+    animation: rotate 1.2s linear infinite;
+  }
+  @include screenMax('tablet') {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

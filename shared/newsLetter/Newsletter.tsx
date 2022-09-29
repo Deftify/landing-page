@@ -3,6 +3,7 @@ import axios from 'axios'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Button from '../button/Button'
+import SmallLoader from '../smallLoader/SmallLoader'
 import styles from './Newsletter.module.scss'
 
 const Newsletter = () => {
@@ -10,41 +11,38 @@ const Newsletter = () => {
   const [email, setEmail] = useState<string>('')
   const [state, setState] = useState<string>('IDLE')
   const [errorMessage, setErrorMessage] = useState<any>(null)
+  const body = document.body.style
 
   const subscribe = async (e: any) => {
     e.preventDefault()
-    setState('LOADING')
-    setErrorMessage(null)
-    try {
-      const response = await axios.post('/api/newsletter', { email })
-      setState('SUCCESS')
-      setEmail('')
-      if (typeof window !== 'undefined') window.localStorage.setItem('subscribed', 'true')
+    if (email) {
+      setState('LOADING')
+      setErrorMessage(null)
+      try {
+        const response = await axios.post('/api/newsletter', { email })
+        setState('SUCCESS')
+        setEmail('')
+        if (typeof window !== 'undefined') window.localStorage.setItem('subscribed', 'true')
 
-      //   setHideModal(true)
-    } catch (e: any) {
-      setErrorMessage(e.response.data.error)
-      setEmail('')
-      setState('ERROR')
+        //   setHideModal(true)
+      } catch (e: any) {
+        setErrorMessage(e.response.data.error)
+        setEmail('')
+        setState('ERROR')
+      }
     }
   }
   useEffect(() => {
     const handleClickOutside = () => {
       setHideModal(true)
+      body.overflowY = ''
     }
 
     document.addEventListener('click', handleClickOutside)
     return () => {
       document.removeEventListener('click', handleClickOutside)
     }
-  }, [setHideModal])
-
-  //   useEffect(() => {
-  //     const timeout = setTimeout(() => setShowModal(true), 3000)
-  //     return () => {
-  //       clearTimeout(timeout)
-  //     }
-  //   }, [])
+  }, [setHideModal, body])
 
   return (
     <div className={styles.section}>
@@ -53,6 +51,7 @@ const Newsletter = () => {
         onClick={(e) => {
           setHideModal(false)
           e.stopPropagation()
+          body.overflowY = 'hidden'
         }}
       >
         <div className={styles.icon}>
@@ -61,11 +60,19 @@ const Newsletter = () => {
       </div>
       {hideModal === false && (
         <div className={styles.modal}>
-          <div className={styles.closeModal}>
-            <span></span>
-            <span></span>
-          </div>
           <div className={styles.container} onClick={(e: any) => e.stopPropagation()}>
+            <div
+              className={styles.closeModal_container}
+              onClick={() => {
+                setHideModal(true)
+                body.overflowY = ''
+              }}
+            >
+              <div className={styles.closeModal}>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
             <div className={styles.sub_container}>
               <div className={styles.title}>
                 <h3>Subscribe to our News letter</h3>
@@ -92,7 +99,7 @@ const Newsletter = () => {
                   {state === 'SUCCESS' && <span data-type={'success'}>Thank you for subscribing</span>}
                 </div>
                 <Button className={styles.button} disabled={state === 'LOADING'} buttonType="submit">
-                  Subscribe
+                  {state === 'LOADING' ? <SmallLoader /> : 'Subscribe'}
                 </Button>
               </form>
             </div>

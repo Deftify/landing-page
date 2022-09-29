@@ -9,21 +9,21 @@ export const navLinks: NavLink[] = [
   {
     name: 'Launchpad',
     title: 'launchpad',
-    url: '/',
-    external: false,
+    url: '#',
+    external: true,
   },
 
   {
     name: 'Metacurse',
     title: 'metacurse',
-    url: '/',
-    external: false,
+    url: '#',
+    external: true,
   },
 
   {
     name: 'Team',
     title: 'team',
-    url: '/',
+    url: '/team',
     external: false,
   },
 
@@ -32,26 +32,5 @@ export const navLinks: NavLink[] = [
     title: 'contact',
     url: '/contact',
     external: false,
-  },
-]
-
-export const product: NavLink[] = [
-  {
-    name: 'Trading',
-    title: 'trading',
-    url: '#',
-    external: true,
-  },
-  {
-    name: 'Staking',
-    title: 'staking',
-    url: '#',
-    external: true,
-  },
-  {
-    name: 'ICO',
-    title: 'ICO',
-    url: '#',
-    external: true,
   },
 ]

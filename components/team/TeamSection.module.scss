@@ -1,0 +1,57 @@
+@import '@/styles/imports';
+
+.section {
+  position: relative;
+  padding: 12rem 8rem 8.2rem;
+  // @include flex(flex-start, flex-start, column);
+  .container {
+    margin-bottom: 4.8rem;
+  }
+  .text,
+  .title {
+    max-width: 51rem;
+    margin: 0 auto;
+    h1 {
+      @extend %title-40;
+      margin-bottom: 2.4rem;
+      font-family: $font-bold;
+      text-align: center;
+      color: $col-white;
+    }
+    p {
+      @extend %text-18;
+      text-align: center;
+      color: $col-grey-30;
+    }
+  }
+
+  .text {
+    max-width: 76.3rem;
+  }
+  @include screenMax('tablet') {
+    padding: 8.2rem 0;
+    .text {
+      max-width: 42.7rem;
+    }
+    .title {
+      max-width: 37.4rem;
+    }
+  }
+  @include screenMax('mobile') {
+    padding: 15rem 0 5rem;
+    flex-wrap: wrap;
+    .text,
+    .title {
+      max-width: 100%;
+      h1 {
+        margin-bottom: 1.5rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.row {
+  @include flex(space-between, flex-start);
+}

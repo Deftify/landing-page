@@ -9,5 +9,6 @@ import PreLoader from './PreLoader/PreLoader'
 import Card from './card/Card'
 import Footer from './footer/Footer'
 import Newsletter from './newsLetter/Newsletter'
+import ProfileCard from './profileCard/ProfileCard'
 
-export { Nprogress, Logo, Button, InputField, Seo, Header, Title, PreLoader, Card, Footer, Newsletter }
+export { Nprogress, Logo, Button, InputField, Seo, Header, Title, PreLoader, Card, Footer, Newsletter, ProfileCard }

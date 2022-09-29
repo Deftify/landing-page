@@ -58,7 +58,10 @@
           height: auto;
           .active_line {
             display: block;
-            animation: 8s infinite linear filling;
+            @include screenMin('lg-tablet') {
+              animation: 8s infinite linear filling;
+            }
+            width: 100%;
           }
           .body {
             max-height: 100rem;

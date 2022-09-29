@@ -26,7 +26,7 @@ const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     }
 
     setHideModal(userSubscribed)
-  }, [hideModal])
+  }, [])
 
   useEffect(() => {
     const handleResize = () => {

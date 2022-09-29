@@ -27,7 +27,6 @@ const subscribeReq = async (req: any, res: any) => {
     }
 
     const response = await axios.post(url, data, options)
-    console.log(response)
     return res.status(201).json({ message: 'success' })
   } catch (error: any) {
     const data = error.response.data
@@ -36,7 +35,7 @@ const subscribeReq = async (req: any, res: any) => {
     return data.status == 400
       ? res.status(400).json({
           error: {
-            message: data.title === 'Member Exists' ? 'Email already subscribed' : data.message,
+            message: data.title === 'Member Exists' ? 'Email already subscribed' : data.detail,
           },
         })
       : res

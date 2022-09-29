@@ -20,28 +20,26 @@ const Newsletter = () => {
       const response = await axios.post('/api/newsletter', { email })
       setState('SUCCESS')
       setEmail('')
-      console.log('success')
-
       if (typeof window !== 'undefined') window.localStorage.setItem('subscribed', 'true')
 
-      setHideModal(true)
+      //   setHideModal(true)
     } catch (e: any) {
       setErrorMessage(e.response.data.error)
       setEmail('')
       setState('ERROR')
     }
   }
-  //   console.log(errorMessage)
+  console.log(hideModal)
   useEffect(() => {
     const handleClickOutside = () => {
-      setShowModal(false)
+      setHideModal(true)
     }
 
     document.addEventListener('click', handleClickOutside)
     return () => {
       document.removeEventListener('click', handleClickOutside)
     }
-  }, [])
+  }, [setHideModal])
 
   //   useEffect(() => {
   //     const timeout = setTimeout(() => setShowModal(true), 3000)
@@ -55,7 +53,7 @@ const Newsletter = () => {
       <div
         className={styles.icon_container}
         onClick={(e) => {
-          setShowModal(true)
+          setHideModal(false)
           e.stopPropagation()
         }}
       >
@@ -93,7 +91,7 @@ const Newsletter = () => {
                 </div>
                 <div className={styles.text}>
                   {state === 'ERROR' && <span data-type={'error'}>{errorMessage!.message}</span>}
-                  {state === 'SUCCESS' && <span data-type={'success'}>Success!</span>}
+                  {state === 'SUCCESS' && <span data-type={'success'}>Thank you for subscribing</span>}
                 </div>
                 <Button className={styles.button} disabled={state === 'LOADING'} buttonType="submit">
                   Subscribe

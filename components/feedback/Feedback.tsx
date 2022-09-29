@@ -41,7 +41,8 @@ const Feedback = () => {
   })
   return (
     <section className={styles.section}>
-      <div className={styles.light}></div>
+      {/*I disabled this section for now until it's truly ready - Ruddy */}
+      {/* <div className={styles.light}></div>
       <div className={styles.title}>
         <h1>What our users say</h1>
       </div>
@@ -84,7 +85,7 @@ const Feedback = () => {
             </SwiperSlide>
           )
         })}
-      </Swiper>
+      </Swiper> */}
       {/* <div className={styles.row}>
         {list.slice(0, 3).map((item) => {
           return <Card key={item} />

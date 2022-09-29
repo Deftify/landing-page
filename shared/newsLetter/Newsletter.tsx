@@ -28,7 +28,6 @@ const Newsletter = () => {
       setState('ERROR')
     }
   }
-  console.log(hideModal)
   useEffect(() => {
     const handleClickOutside = () => {
       setHideModal(true)

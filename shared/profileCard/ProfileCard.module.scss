@@ -36,6 +36,7 @@
     p {
       margin-top: 1rem;
       @extend %text-14;
+      color: $col-white;
     }
   }
   .icon_container {

@@ -1,21 +1,23 @@
 import { features } from '@/mock'
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Features.module.scss'
 
 const Features = () => {
   const [activeNumber, setActiveNumber] = useState<number>(0)
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (activeNumber < 3) setActiveNumber(activeNumber + 1)
+      if (activeNumber === 2) setActiveNumber(0)
+    }, 8000)
+    return () => clearTimeout(timeout)
+  }, [activeNumber])
   return (
     <section className={styles.section}>
       <div className={styles.title}>
         <h1>Our features</h1>
       </div>
       <div className={styles.containers}>
-        <div className={styles.indicator_container}>
-          <span className={styles.indicator} data-active={activeNumber === 0} style={{ top: '0' }}></span>
-          <span className={styles.indicator} data-active={activeNumber === 1} style={{ top: '5.5rem' }}></span>
-          <span className={styles.indicator} data-active={activeNumber === 2} style={{ top: '11rem' }}></span>
-        </div>
         <div className={styles.container}>
           {features.map(({ title, text, image }, index) => {
             return (
@@ -66,6 +68,7 @@ const Accordion = ({ title, text, isActive, setIsActive, image }: AccordionProps
           <Image src={image} layout="fill" alt="" />
         </div>
       </div>
+      <span className={styles.active_line}></span>
     </div>
   )
 }

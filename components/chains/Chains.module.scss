@@ -2,28 +2,28 @@
 
 .section {
   position: relative;
-  padding: 8.2rem 0 8.2rem 10rem;
-  @include flex(flex-start, flex-start, nowrap);
+  padding: 8.2rem 10rem;
+  // @include flex(flex-start, flex-start, column);
   .text,
   .title {
-    max-width: 47.4rem;
-
+    max-width: 51rem;
+    margin: 0 auto;
     h1 {
       @extend %title-40;
       margin-bottom: 2.4rem;
       font-family: $font-bold;
-      text-align: left;
+      text-align: center;
       color: $col-white;
     }
     p {
       @extend %text-18;
-      text-align: left;
+      text-align: center;
       color: $col-grey-30;
     }
   }
 
   .text {
-    max-width: 52.7rem;
+    max-width: 76.3rem;
   }
   @include screenMax('tablet') {
     padding: 8.2rem 0;
@@ -52,18 +52,17 @@
 .container {
   flex-shrink: 0;
   .row {
-    @include flex(flex-start, flex-start, nowrap);
+    @include flex(space-between, flex-start, nowrap);
     .icon {
       position: relative;
-      width: 6.4rem;
-      height: 6.4rem;
+      width: 12rem;
+      height: 12rem;
       &:not(:last-child) {
         margin-right: 2.5rem;
       }
     }
     &:last-child {
       margin-top: 4rem;
-      margin-left: 4rem;
     }
     @include screenMax('tablet') {
       .icon {
@@ -83,10 +82,10 @@
     flex-shrink: 1;
     .row {
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       .icon {
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 7.2rem;
+        height: 7.2rem;
         margin: 1rem 1.5rem;
       }
       &:last-child {

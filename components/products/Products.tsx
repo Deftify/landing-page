@@ -18,9 +18,7 @@ const Products = () => {
             </div>
             <div className={styles.text}>
               <h3>{product.title}</h3>
-              <p>
-                {product.description} <span>Learn more</span>
-              </p>
+              <p>{product.description}</p>
             </div>
           </div>
         ))}

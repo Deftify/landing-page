@@ -8,5 +8,6 @@ import Title from './title/Title'
 import PreLoader from './PreLoader/PreLoader'
 import Card from './card/Card'
 import Footer from './footer/Footer'
+import Newsletter from './newsLetter/Newsletter'
 
-export { Nprogress, Logo, Button, InputField, Seo, Header, Title, PreLoader, Card, Footer }
+export { Nprogress, Logo, Button, InputField, Seo, Header, Title, PreLoader, Card, Footer, Newsletter }

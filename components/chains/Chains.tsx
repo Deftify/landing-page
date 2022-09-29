@@ -30,38 +30,19 @@ const Chains = () => {
         <div className={styles.text}>
           <p>
             Whether you are a daytrader or long-term HODL-ers, our tools are designed to help you make more informed and
-            more confidence decision. Use Deftify to do your due dilligence before you trade BTC, ETH, or other cryptocurrencies.
+            more confidence decision. Use Deftify to do your due dilligence before you trade BTC, ETH, or other
+            cryptocurrencies.
           </p>
         </div>
       </div>
       <div className={styles.container}>
-        {isSmallScreen ? (
-          <div className={styles.row}>
-            {icons.map(({ icon, title }, index) => (
-              <div className={styles.icon} key={index}>
-                <Image src={icon} alt="" layout="fill" title={title} />
-              </div>
-            ))}
-          </div>
-        ) : (
-          <>
-            {' '}
-            <div className={styles.row}>
-              {icons.slice(0, 9).map(({ icon, title }, index) => (
-                <div className={styles.icon} key={index}>
-                  <Image src={icon} alt="" layout="fill" title={title} />
-                </div>
-              ))}
+        <div className={styles.row}>
+          {icons.map(({ icon, title }, index) => (
+            <div className={styles.icon} key={index}>
+              <Image src={icon} alt="" layout="fill" title={title} />
             </div>
-            <div className={styles.row}>
-              {icons.slice(9, 18).map(({ icon, title }, index) => (
-                <div className={styles.icon} key={index}>
-                  <Image src={icon} alt="" layout="fill" title={title} />
-                </div>
-              ))}
-            </div>
-          </>
-        )}
+          ))}
+        </div>
       </div>
     </section>
   )

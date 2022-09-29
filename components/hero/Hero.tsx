@@ -13,10 +13,6 @@ const Hero = () => {
     const title = element?.children[1]
     const text = element?.children[2]
     const buttons = element?.children[3]
-    // gsap.to(element, {
-    //   visibility: 'visible',
-    //   duration: 0,
-    // })
     gsap.fromTo(
       [title, text, buttons],
       {
@@ -35,17 +31,23 @@ const Hero = () => {
       </div>
       <div className={styles.text}>
         <p>
-          Predict crypto movement with Deftify’s market data aggregator, DeFi analytics, and research tools. Try our app and see for
-          yourself
+          Predict crypto movement with Deftify’s market data aggregator, DeFi analytics, and research tools. Try our app
+          and see for yourself
         </p>
       </div>
       <div className={styles.button_container}>
         <Button type="primary" className={styles.button}>
           Explore
         </Button>
-        <a href="https://drive.google.com/file/d/1r6i5xi8nkG4Y15e8YomfW1JpzUFF1rmf/view?usp=sharing" rel="nofollow noopener" target="blank"><Button type="transparent" className={styles.button}>
-          <div>Pitch Deck</div>
-        </Button></a>
+        <Button type="transparent" className={styles.button}>
+          <a
+            href="https://drive.google.com/file/d/1r6i5xi8nkG4Y15e8YomfW1JpzUFF1rmf/view?usp=sharing"
+            rel="nofollow noopener"
+            target="blank"
+          >
+            <div>Pitch Deck</div>
+          </a>
+        </Button>
       </div>
     </section>
   )

@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Button, InputField } from '@/shared'
 import emailjs from 'emailjs-com'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import styles from './Contact.module.scss'
 
 const SERVICE_ID: any = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
@@ -50,14 +52,28 @@ const Contact = () => {
       )
     }
   }
-  const handleChange = (e: any) => {
-    setValues((values) => ({
-      ...values,
-      [e.target.name]: e.target.value,
-    }))
-  }
+
+  gsap.registerPlugin(ScrollTrigger)
+  let tl = gsap.timeline({ delay: 0.8 })
+  const ref = useRef<HTMLElement | null>(null)
+  useEffect(() => {
+    const element = ref.current
+    const title = element?.children[0]
+    const input1 = element?.children[1].children[0]
+    const input2 = element?.children[1].children[1]
+    const button = element?.children[1].children[2]
+    gsap.fromTo(
+      [title, input1, input2, button],
+      {
+        y: 370,
+        duration: 1.5,
+        delay: 1,
+      },
+      { y: 0, duration: 2, ease: 'elastic.out(1, 1)', stagger: 0.1 },
+    )
+  }, [])
   return (
-    <section className={styles.section} id="contact">
+    <section className={styles.section} id="contact" ref={ref}>
       <div className={styles.title}>
         <h1>Get in touch with the team</h1>
       </div>

@@ -6,25 +6,6 @@
   .containers {
     @include flex(space-between);
     position: relative;
-    .indicator_container {
-      position: absolute;
-      left: -2.4rem;
-      top: 0;
-      width: 0.4rem;
-      height: 16.5rem;
-      background-color: #37352d;
-      .indicator {
-        height: 5.5rem;
-        background-color: #37352d;
-        position: absolute;
-        transition: all 0.3s linear;
-        width: 100%;
-        &[data-active='true'] {
-          background-color: $col-white;
-          transition: all 0.3s linear;
-        }
-      }
-    }
     .container {
       .image {
         position: relative;
@@ -38,10 +19,20 @@
         }
       }
       .accordion {
-        border-bottom: 0.1rem solid #37352d;
+        border-bottom: 0.4rem solid #37352d;
         max-width: 45rem;
         padding-bottom: 3.6rem;
         margin-bottom: 3.6rem;
+        position: relative;
+        .active_line {
+          position: absolute;
+          height: 0.4rem;
+          width: 4rem;
+          background-color: $col-white;
+          display: none;
+          left: 0;
+          bottom: -0.4rem;
+        }
         .header {
           cursor: pointer;
           .text {
@@ -65,6 +56,10 @@
         &[data-active='true'] {
           transition: all 0.5s ease-in-out;
           height: auto;
+          .active_line {
+            display: block;
+            animation: 8s infinite linear filling;
+          }
           .body {
             max-height: 100rem;
             transition: all 0.5s ease-in-out;
@@ -138,5 +133,14 @@
         margin-bottom: 1rem;
       }
     }
+  }
+}
+
+@keyframes filling {
+  from {
+    width: 0rem;
+  }
+  to {
+    width: 100%;
   }
 }

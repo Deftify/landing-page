@@ -7,6 +7,7 @@ interface Props {
   type?: 'primary' | 'transparent'
   buttonType?: 'button' | 'submit'
   children: React.ReactNode
+  disabled?: boolean
   iconPrefix?: string
   iconSuffix?: string
   className?: string
@@ -21,6 +22,7 @@ const Button = ({
   iconPrefix,
   iconSuffix,
   buttonType = 'button',
+  disabled = false,
 }: Props) => {
   return (
     <button
@@ -28,6 +30,7 @@ const Button = ({
       className={`${styles[type]} ${className} ${styles.button}`}
       data-type={type}
       type={buttonType}
+      disabled={disabled}
     >
       {!!iconPrefix && (
         <figure className={styles.button_icon}>

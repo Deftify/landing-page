@@ -28,9 +28,9 @@ export const navLinks: NavLink[] = [
   },
 
   {
-    name: 'contact',
+    name: 'Contact',
     title: 'contact',
-    url: '/',
+    url: '/contact',
     external: false,
   },
 ]

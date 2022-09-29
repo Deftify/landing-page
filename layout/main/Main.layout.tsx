@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Header, Footer } from '@/shared'
+import { Header, Footer, Newsletter } from '@/shared'
 // import Footer from '@/components/footer/Footer'
 
 // import { Button } from "@/shared";
@@ -35,6 +35,7 @@ const Main = ({ children, page }: Props): ReactElement => {
       )}
 
       <main className={styles.layout_content}>{children}</main>
+      <Newsletter />
       <Footer />
     </div>
   )

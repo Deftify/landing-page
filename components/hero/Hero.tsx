@@ -40,13 +40,13 @@ const Hero = () => {
           Explore
         </Button>
         <Button type="transparent" className={styles.button}>
-          <a
+          {/* <a
             href="https://drive.google.com/file/d/1r6i5xi8nkG4Y15e8YomfW1JpzUFF1rmf/view?usp=sharing"
             rel="nofollow noopener"
             target="blank"
-          >
-            <div>Pitch Deck</div>
-          </a>
+          > */}
+            <div>White Paper</div>
+          {/* </a> */}
         </Button>
       </div>
     </section>

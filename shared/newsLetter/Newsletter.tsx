@@ -7,7 +7,6 @@ import styles from './Newsletter.module.scss'
 
 const Newsletter = () => {
   const { hideModal, setHideModal }: any = useGlobalContext()
-  const [showModal, setShowModal] = useState<boolean>(false)
   const [email, setEmail] = useState<string>('')
   const [state, setState] = useState<string>('IDLE')
   const [errorMessage, setErrorMessage] = useState<any>(null)

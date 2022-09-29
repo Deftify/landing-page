@@ -30,7 +30,6 @@ const subscribeReq = async (req: any, res: any) => {
     return res.status(201).json({ message: 'success' })
   } catch (error: any) {
     const data = error.response.data
-    console.log(data.message)
 
     return data.status == 400
       ? res.status(400).json({

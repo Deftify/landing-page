@@ -1,12 +1,12 @@
 @import '@/styles/imports';
 
 .card {
-  width: 40rem;
+  width: 30rem;
   margin-bottom: 9rem;
   .image_container {
     border-radius: 4rem;
     width: 100%;
-    height: 48rem;
+    height: 36rem;
     margin-bottom: 3.2rem;
     overflow: hidden;
     .image {
@@ -43,9 +43,9 @@
     @include flex(flex-start, center);
     .icon {
       position: relative;
-      width: 4.8rem;
-      height: 4.8rem;
-      margin-left: 2.3rem;
+      width: 2.8rem;
+      height: 2.8rem;
+      margin-left: 1rem;
     }
   }
   @include screenMax('mobile') {

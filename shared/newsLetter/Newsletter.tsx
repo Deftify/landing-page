@@ -75,11 +75,11 @@ const Newsletter = () => {
             </div>
             <div className={styles.sub_container}>
               <div className={styles.title}>
-                <h3>Subscribe to our News letter</h3>
+                <h3>Subscribe to our newsletter</h3>
               </div>
               <div className={styles.text}>
                 <p>
-                  Get access to updates on our newsletter to stay up to date on our speacial packages tailored for you.
+                  Get access to our latest updates on our newsletter. Stay up to date and don't miss any important updates from Deftify.
                 </p>
               </div>
               <form onSubmit={subscribe}>

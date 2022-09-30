@@ -79,7 +79,7 @@ const Newsletter = () => {
               </div>
               <div className={styles.text}>
                 <p>
-                  Get access to our latest updates on our newsletter. Stay up to date and don't miss any important updates from Deftify.
+                  Get access to our latest updates on our newsletter. Stay up to date and don't miss any important update from Deftify.
                 </p>
               </div>
               <form onSubmit={subscribe}>

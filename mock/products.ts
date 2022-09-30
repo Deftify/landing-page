@@ -8,7 +8,7 @@ interface Products {
 export const products: Products[] = [
   {
     image: '/svgs/metacurse-min.svg',
-    title: 'Metacurse',
+    title: 'GamePad',
     description:
       'Developed by our own in-house game development team, MetaCurse is built to revolutionize blockchain gaming ecosystem.',
     url: '#',

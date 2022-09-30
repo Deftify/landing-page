@@ -14,9 +14,9 @@ export const navLinks: NavLink[] = [
   },
 
   {
-    name: 'Metacurse',
-    title: 'metacurse',
-    url: '#',
+    name: 'Gamepad',
+    title: 'gamepad',
+    url: 'https://metacurse.gg',
     external: true,
   },
 

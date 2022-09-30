@@ -77,7 +77,7 @@ export const team: Team[] = [
   },
   {
     name: 'Jay Wang',
-    role: 'Business Development Manager',
+    role: 'BDM',
     linkedIn: 'https://www.linkedin.com/feed/',
     image: '/svgs/profile.svg',
     description:

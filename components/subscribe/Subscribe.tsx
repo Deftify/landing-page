@@ -34,7 +34,7 @@ const Subscribe = () => {
         <h1>Subscribe</h1>
       </div>
       <div className={styles.text}>
-        <p>Get access to our latest updates on our newsletter. Stay up to date and don't miss any important update from Deftify.</p>
+        <p>Get access to our latest updates on our newsletter. Stay up to date and do not miss any important update from Deftify.</p>
       </div>
       <form onSubmit={subscribe} className={styles.container}>
         <div className={styles.input}>

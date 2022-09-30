@@ -22,7 +22,7 @@ export const team: Team[] = [
     linkedIn: 'https://www.linkedin.com/in/ruddy-setiadi-gunawan/',
     image: '/images/profile/2.png',
     description:
-      'Ruddy worked with various crypto projects since 2018, including Publish0x, Remitano, and a CMO role for Lead Wallet. He’s also tech savvy and has good knowledge of Web3 apps and project development, he can manage technical teams efficiently.',
+      'Ruddy worked with various crypto projects since 2018, including Publish0x, Remitano, CoinMarketCap, and others. He’s also tech savvy and has good knowledge of Web3 apps and project development, he can manage technical teams efficiently.',
   },
   {
     name: 'Olapade Samuel',
@@ -41,14 +41,14 @@ export const team: Team[] = [
     description:
       'Philip is a highly innovative polyglot software engineer and blockchain developer with over 10 years programming experience. He is a co-founder at Guild Protocol, Buttons Labs and Techmybrand. Has experiences leading distributed teams',
   },
-  {
-    name: 'Neil Mani',
-    role: 'Chief Design Officer',
-    linkedIn: 'https://www.linkedin.com/feed/',
-    image: '/images/profile/3.png',
-    description:
-      'Neil Mani is an experienced designer with more than seven years of experience in design leadership, video making, user journey, strategic design, and user experience design. Neil brings his extensive design experience to Deftify and will oversee the UI/UX design',
-  },
+  // {
+  //   name: 'Neil Mani',
+  //   role: 'Chief Design Officer',
+  //   linkedIn: 'https://www.linkedin.com/feed/',
+  //   image: '/images/profile/3.png',
+  //   description:
+  //     'Neil Mani is an experienced designer with more than seven years of experience in design leadership, video making, user journey, strategic design, and user experience design. Neil brings his extensive design experience to Deftify and will oversee the UI/UX design',
+  // },
   {
     name: 'Revival Nano',
     role: 'Frontend Dev',
@@ -87,12 +87,12 @@ export const team: Team[] = [
 
 export const advisors: Team[] = [
   {
-    name: 'Obasi Francis Ifegwu',
-    role: 'Strategic Advisor',
-    linkedIn: 'https://www.linkedin.com/in/obasi-francis-ifegwu-79829794/',
-    image: '/images/profile/7.png',
+    name: 'Marcin Kolago',
+    role: 'Operations Advisor',
+    linkedIn: 'https://www.linkedin.com/in/marcinkolago/',
+    image: '/images/profile/marcin.png',
     description:
-      'Obasi has over 7 years of experience in the start-up environment, he is the CEO of Cassava Network and DeSpace Protocol. With his massive experience, Obasi will advise Deftify on strategies to build a successful DeFi and NFT brand for the entire Deftify ecosystem.',
+      'Startup mentor and corporate innovator, leading teams, managing major projects. Worked for a corporation investing in crypto before it was fashionable. Now focused on helping teams avoid simple mistakes.',
   },
   {
     name: 'CryptoEdit',
@@ -111,11 +111,11 @@ export const advisors: Team[] = [
       'Worked with startups in the past 30+ years of International Business Development and Venture Capital experience.  His passion revolves around blockchain and metaverse where can regularly be found testing new strategies. His main focus is building partnerships with a singular vision.',
   },
   {
-    name: 'Marcin Kolago',
-    role: 'Operations Advisor',
-    linkedIn: 'https://www.linkedin.com/in/marcinkolago/',
-    image: '/images/profile/marcin.png',
+    name: 'Obasi Francis Ifegwu',
+    role: 'Strategic Advisor',
+    linkedIn: 'https://www.linkedin.com/in/obasi-francis-ifegwu-79829794/',
+    image: '/images/profile/7.png',
     description:
-      'Startup mentor and corporate innovator, leading teams, managing major projects. Worked for a corporation investing in crypto before it was fashionable. Now focused on helping teams avoid simple mistakes.',
+      'Obasi has over 7 years of experience in the start-up environment, he is the CEO of Cassava Network and DeSpace Protocol. With his massive experience, Obasi will advise Deftify on strategies to build a successful DeFi and NFT brand for the entire Deftify ecosystem.',
   },
 ]

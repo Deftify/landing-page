@@ -11,7 +11,7 @@ const TeamSection = () => {
         </div>
         <div className={styles.text}>
           <p>
-            Deftify team members come from diverse backgrounds but all share proven track records in the cryptocurrency
+            Deftify team members come from diverse backgrounds, all with share proven track records in the cryptocurrency
             space.
           </p>
         </div>

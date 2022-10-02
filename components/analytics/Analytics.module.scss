@@ -52,8 +52,8 @@
   flex-shrink: 0;
   .image {
     position: relative;
-    width: 58rem;
-    height: 58rem;
+    width: 46rem;
+    height: 52rem;
   }
   @include screenMax('tablet') {
     .image {

@@ -6,12 +6,12 @@ interface Icons {
 
 export const icons: Icons[] = [
   {
-    icon: '/svgs/icon-chainlink.svg',
-    title: 'chainlink',
+    icon: '/svgs/bitcoin.svg',
+    title: 'bitcoin',
   },
   {
-    icon: '/svgs/icon-ethereum.svg',
-    title: 'eth',
+    icon: '/svgs/icon-eth.svg',
+    title: 'ethereum',
   },
   {
     icon: '/svgs/icon-bnb.svg',
@@ -30,8 +30,8 @@ export const icons: Icons[] = [
     title: 'uniswap',
   },
   {
-    icon: '/svgs/compound.svg',
-    title: 'compound',
+    icon: '/svgs/icon-chainlink.svg',
+    title: 'chainlink',
   },
   // {
   //   icon: '/svgs/icon-dai.svg',

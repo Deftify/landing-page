@@ -18,7 +18,7 @@ const Analytics = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.image}>
-          <Image src="/svgs/analytics-min.svg" layout="fill" alt="" quality={100} />
+          <Image src="/svgs/analytics-new-img.svg" layout="fill" alt="" quality={100} />
         </div>
       </div>
     </section>

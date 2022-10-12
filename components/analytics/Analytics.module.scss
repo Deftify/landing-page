@@ -2,7 +2,7 @@
 
 .section {
   position: relative;
-  padding: 8.2rem 10rem;
+  padding: 5rem 10rem;
   overflow-x: hidden;
   @include flex(space-between, center, nowrap);
   .text,
@@ -52,8 +52,8 @@
   flex-shrink: 0;
   .image {
     position: relative;
-    width: 46rem;
-    height: 52rem;
+    width: 50.383rem;
+    height: 50rem;
   }
   @include screenMax('tablet') {
     .image {

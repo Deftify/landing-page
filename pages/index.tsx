@@ -22,7 +22,7 @@ const Home = (): ReactElement => {
       <CounterSection />
       <Features />
       <Analytics />
-      <Products />
+      {/* <Products /> */}
       <Subscribe />
       {/* <Feedback /> */}
       {/* <Contact /> */}

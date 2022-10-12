@@ -7,18 +7,18 @@ export interface NavLink {
 
 export const navLinks: NavLink[] = [
   {
-    name: 'Launchpad',
-    title: 'launchpad',
+    name: 'App',
+    title: 'app',
     url: '#',
     external: true,
   },
 
-  {
-    name: 'Gamepad',
-    title: 'gamepad',
-    url: 'https://metacurse.gg',
-    external: true,
-  },
+  // {
+  //   name: 'Gamepad',
+  //   title: 'gamepad',
+  //   url: 'https://metacurse.gg',
+  //   external: true,
+  // },
 
   {
     name: 'Team',

@@ -13,13 +13,6 @@ export const navLinks: NavLink[] = [
     external: true,
   },
 
-  // {
-  //   name: 'Gamepad',
-  //   title: 'gamepad',
-  //   url: 'https://metacurse.gg',
-  //   external: true,
-  // },
-
   {
     name: 'Team',
     title: 'team',
@@ -32,5 +25,12 @@ export const navLinks: NavLink[] = [
     title: 'contact',
     url: '/contact',
     external: false,
+  },
+
+  {
+    name: 'Blog',
+    title: 'blog',
+    url: 'https://blog.deftify.io',
+    external: true,
   },
 ]

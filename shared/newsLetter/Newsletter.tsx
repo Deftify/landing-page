@@ -30,8 +30,14 @@ const Newsletter = () => {
         setEmail('')
         setState('ERROR')
       }
+    } else if (!email) {
+      setState('EMPTY')
+      setErrorMessage('Please input an email address')
     }
   }
+  useEffect(() => {
+    hideModal ? (body.overflowY = '') : (body.overflowY = 'hidden')
+  }, [hideModal, body])
   useEffect(() => {
     const handleClickOutside = () => {
       setHideModal(true)
@@ -79,7 +85,8 @@ const Newsletter = () => {
               </div>
               <div className={styles.text}>
                 <p>
-                  Get access to our latest updates on our newsletter. Stay up to date and don't miss any important update from Deftify.
+                  Get access to our latest updates on our newsletter. Stay up to date and don&apos;t miss any important
+                  update from Deftify.
                 </p>
               </div>
               <form onSubmit={subscribe}>
@@ -96,6 +103,7 @@ const Newsletter = () => {
                 </div>
                 <div className={styles.text}>
                   {state === 'ERROR' && <span data-type={'error'}>{errorMessage!.message}</span>}
+                  {state === 'EMPTY' && !email && <span data-type={'error'}>{errorMessage}</span>}
                   {state === 'SUCCESS' && <span data-type={'success'}>Thank you for subscribing</span>}
                 </div>
                 <Button className={styles.button} disabled={state === 'LOADING'} buttonType="submit">

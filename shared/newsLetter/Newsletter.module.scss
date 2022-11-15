@@ -77,7 +77,9 @@
 
 .container {
   background-color: rgba(3, 3, 0, 1);
+  @include flex(flex-start, flex-start, column);
   width: 90rem;
+  // margin: 23rem auto;
   border-radius: 1rem;
   padding: 5.6rem 0 0 5.6rem;
   position: relative;
@@ -170,5 +172,46 @@
   width: 16rem;
   @include screenMax('mobile') {
     width: 100%;
+  }
+}
+
+@media (min-height: 800px) and (min-width: 2500px) {
+  .modal {
+    display: block;
+  }
+  .container {
+    margin: 8rem auto;
+  }
+  .image {
+    position: relative;
+    width: 31.8rem;
+    height: 33.1rem;
+  }
+  .title {
+    max-width: 100%;
+    h3 {
+      line-height: 2.8rem;
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: $font-bold;
+    }
+  }
+
+  .text {
+    max-width: 35.4rem;
+    p {
+      line-height: 1.6rem;
+      font-size: 1rem;
+    }
+    span {
+      line-height: 1.6rem;
+      font-size: 1rem;
+      &[data-type='error'] {
+        color: $col-error-40;
+      }
+      &[data-type='success'] {
+        color: $col-success-40;
+      }
+    }
   }
 }

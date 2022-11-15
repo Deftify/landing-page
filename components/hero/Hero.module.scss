@@ -2,8 +2,9 @@
 
 .section {
   @include flex(center, center, column nowrap);
-  min-height: 100vh;
-  padding: 0 !important;
+  padding-top: 23rem;
+  // min-height: 100vh;
+  // padding: 0 !important;
   position: relative;
 }
 .text,

@@ -17,6 +17,20 @@
     text-align: center;
     color: $col-white;
   }
+  h3 {
+    @extend %text-14;
+    font-family: $font-bold;
+    color: $col-white;
+  }
+  h6,
+  a {
+    @extend %text-14;
+    color: $col-grey-70;
+  }
+  a {
+    font-family: $font-bold;
+    text-decoration: underline;
+  }
   p {
     @extend %text-18;
     text-align: center;
@@ -31,26 +45,45 @@
   max-width: 60.5rem;
 }
 
+.alert {
+  width: 44.7rem;
+  background-color: $col-blue-10;
+  height: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 20rem;
+  @include flex(space-between, center);
+  padding-right: 1.6rem;
+  .alert_blue {
+    width: 13.1rem;
+    background-color: $col-blue-40;
+    height: 100%;
+    border-radius: 20rem;
+    display: grid;
+    place-items: center;
+  }
+}
+
 .button_container {
   @include flex(center, center);
   margin-top: 4rem;
   .button {
     @extend %text-16;
     width: 24rem;
-    &:first-child {
-      margin-right: 1.6rem;
+    div {
+      // background-color: $col-grey-100;
+      border-radius: 0.6rem;
+      // padding: 1.8rem;
+      width: 100%;
+      height: 100%;
+      color: $col-grey-100;
     }
-    &:last-child {
-      background: $col-gold-gradient;
-      padding: 0.1rem !important;
-      div {
-        background-color: $col-grey-100;
-        border-radius: 0.6rem;
-        padding: 1.8rem;
-        width: 100%;
-        height: 100%;
-      }
-    }
+    // &:first-child {
+    //   margin-right: 1.6rem;
+    // }
+    // &:last-child {
+    //   background: $col-gold-gradient;
+    //   padding: 0.1rem !important;
+    // }
   }
   @include screenMax('ssm-mobile') {
     width: 100%;

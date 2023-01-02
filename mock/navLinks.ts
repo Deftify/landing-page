@@ -9,7 +9,7 @@ export const navLinks: NavLink[] = [
   {
     name: 'App',
     title: 'app',
-    url: '#',
+    url: 'https://beta.deftify.io',
     external: true,
   },
 

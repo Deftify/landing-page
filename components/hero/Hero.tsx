@@ -10,11 +10,12 @@ const Hero = () => {
   const ref = useRef<HTMLElement | null>(null)
   useEffect(() => {
     const element = ref.current
-    const title = element?.children[1]
-    const text = element?.children[2]
-    const buttons = element?.children[3]
+    const alert = element?.children[1]
+    const title = element?.children[2]
+    const text = element?.children[3]
+    const buttons = element?.children[4]
     gsap.fromTo(
-      [title, text, buttons],
+      [alert, title, text, buttons],
       {
         y: 370,
         duration: 1.5,
@@ -26,6 +27,21 @@ const Hero = () => {
   return (
     <section className={styles.section} id="home" ref={ref}>
       <div className={styles.light}></div>
+      <div className={styles.alert}>
+        <div className={styles.alert_blue}>
+          <div className={styles.title}>
+            <h3>Deftify beta 🎉</h3>
+          </div>
+        </div>
+        <div className={styles.title}>
+          <h6>
+            We&apos;ve launched, click the link to{' '}
+            <a href="https://blog.deftify.io" rel="nofollow noopener" target="blank">
+              learn more
+            </a>
+          </h6>
+        </div>
+      </div>
       <div className={styles.title}>
         <h1>Simpler Crypto and DeFi Analytics</h1>
       </div>
@@ -37,17 +53,19 @@ const Hero = () => {
       </div>
       <div className={styles.button_container}>
         <Button type="primary" className={styles.button}>
-          Explore
+          <a href="https://beta.deftify.io" rel="nofollow noopener" target="blank">
+            <div>Explore</div>
+          </a>
         </Button>
-        <Button type="transparent" className={styles.button}>
-          {/* <a
+        {/* <Button type="transparent" className={styles.button}>
+          <a
             href="https://drive.google.com/file/d/1r6i5xi8nkG4Y15e8YomfW1JpzUFF1rmf/view?usp=sharing"
             rel="nofollow noopener"
             target="blank"
-          > */}
+          >
             <div>White Paper</div>
-          {/* </a> */}
-        </Button>
+          </a>
+        </Button> */}
       </div>
     </section>
   )

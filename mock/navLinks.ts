@@ -30,7 +30,7 @@ export const navLinks: NavLink[] = [
   {
     name: 'Blog',
     title: 'blog',
-    url: 'https://blog.deftify.io',
+    url: 'https://blog.deftify.io/first-version-of-deftify-beta-is-live/',
     external: true,
   },
 ]
